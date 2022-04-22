@@ -72,5 +72,9 @@ public class MainManager : MonoBehaviour
     {
         m_GameOver = true;
         GameOverText.SetActive(true);
+
+        GameManager.setScore(m_Points);
+
+        SceneManager.LoadScene("StartMenu");
     }
 }
